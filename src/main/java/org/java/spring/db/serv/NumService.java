@@ -13,10 +13,10 @@ public class NumService {
 	@Autowired
 	private NumRepository numRepository;
 	
-	private List<Num> findAll(){
+	public List<Num> findAll(){
 		return numRepository.findAll();
 	}
-	private Num findById(int id) {
+	public Num findById(int id) {
 		return numRepository.findById(id).get();
 	}
 	public void save(Num num) {
